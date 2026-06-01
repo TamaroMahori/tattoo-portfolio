@@ -28,6 +28,7 @@ header{
 header h1{
     color:#ff0000;
     font-size:2.5rem;
+    
 }
 
 header p{
@@ -79,6 +80,48 @@ section{
     transition:0.3s;
 }
 
+#pricing{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.pricing-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.price-card{
+    background:#1a1a1a;
+    width:280px;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #333;
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-5px);
+}
+
+.price-card h3{
+    color:#c1121f;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.pricing-note{
+    margin-top:30px;
+    color:#ccc;
+}
+
 .gallery img:hover{
     transform:scale(1.05);
 }
@@ -101,6 +144,8 @@ section{
     color:white;
     text-decoration:none;
     border-radius:5px;
+
+
 }
 
 footer{
@@ -131,7 +176,7 @@ footer{
 </div>
 
 <section id="about">
-    <h2>About Me</h2>
+    <h2>About</h2>
     <br>
     <div class="card">
         <p>
@@ -148,7 +193,48 @@ footer{
 
     <div class="gallery">
         <img src="tattoo1.jpg" alt="Tattoo 1">
+        <img src="tattoo2.jpeg" alt="Tattoo 2">
+        <img src="tattoo3.jpeg" alt="Tattoo 3">  
     </div>
+
+
+</section>
+
+<section id="pricing">
+
+    <h2>Pricing</h2>
+
+    <div class="pricing-container">
+
+        <div class="price-card">
+            <h3>Small Tattoo</h3>
+            <p class="price">R300+</p>
+            <p>Simple designs, initials, symbols, small artwork.</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Medium Tattoo</h3>
+            <p class="price">R600+</p>
+            <p>Detailed designs, names, quotes, custom artwork.</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Large Tattoo</h3>
+            <p class="price">R1200+</p>
+            <p>Portraits, realism, larger custom designs.</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Sleeves & Custom Projects</h3>
+            <p class="price">Consultation</p>
+            <p>Pricing based on design complexity and session time.</p>
+        </div>
+
+    </div>
+
+    <p class="pricing-note">
+        * Final pricing depends on size, placement, detail, and time required.
+    </p>
 
 </section>
 
